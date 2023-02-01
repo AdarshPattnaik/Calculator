@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- CSS Style-sheet: -->
+    <link rel="stylesheet" href="../CSS/calculator-homepage.css">
+
+    <!-- Font -->
+    <!-- Navigation Bar -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Secular+One&display=swap" rel="stylesheet">
+
+    <!-- Calculator -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <video autoplay muted loop plays-inline id="myVideo">
+        <source src="../SkyNetwork.mp4" type="video/mp4">
+    </video>
+
+    <nav id="navbar">
+        <h1>Calculator</h1>
+    </nav>
+
+    <div class="container">
+
+        <div class="box">
+
+            <!-- 
+                height = 441 px
+                width = 220 px
+             -->
+
+
+            <div class="row" poster="poster.jpg" id="input-place">
+                <input class="input" type="text" />
+            </div>
+
+            <div class="row" id="row1">
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button bg-blue color-white">+</button>
+            </div>
+            <div class="row" id="row2">
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button bg-blue color-white">-</button>
+            </div>
+            <div class="row" id="row3">
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button bg-blue color-white">x</button>
+            </div>
+            <div class="row" id="row4">
+                <button class="button">0</button>
+                <button class="button">.</button>
+                <button class="button">√</button>
+                <button class="button bg-blue color-white">÷</button>
+            </div>
+            <div class="row" id="row5">
+                <button id="all-clear" class="button bg-red color-white">AC</button>
+                <button class="button bg-yellow color-white backspace">&LeftTriangleBar;</button>
+                <button class="button bg-green color-white">=</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>Copyright &copy; 2023-2024 | Design by Adarsh</footer>
+
+    <script src="../Javascript/calculator-homepage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+/* This CSS stylesheet is for the beautification of the webpage */
+
+/* Initiation of the CSS Source Code */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth Scrolling of the webpage */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Root */
+:root {
+    --dark: rgba(12, 16, 34);
+    --light: rgba(237, 227, 255);
+}
+
+/* HTML Body */
+body {
+    background-color: black;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: -1;
+    /* opacity: 0.7; */
+    filter: contrast(150%) saturate(200%) hue-rotate(100deg) blur(3px);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav {
+    /* border: 1px solid red; */
+    height: 60px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    width: 45px;
+}
+
+nav h1 {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(20, 20, 20));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    /* background: red; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 440px;
+    width: 17rem;
+    background: rgba(99, 0, 54, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px white inset, 0px 0px 10px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    margin: 5px;
+}
+
+.button {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    margin: 1px 0 1px 0;
+    height: 3rem;
+    width: 3.5rem;
+    background: rgba(255, 255, 255, 0.65);
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px white inset, 0px 0px 3px white;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.726);
+}
+
+#input-place {
+    margin-bottom: 10px;
+}
+
+.row input {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    background: rgba(0, 12, 122, 0.301);
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 5px white inset;
+    padding: 10px;
+    font-size: 18px;
+    height: 90px;
+    width: 15rem;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+#all-clear {
+    width: 7.4rem;
+}
+
+.bg-green {
+    background: rgba(0, 255, 13, 0.65);
+    box-shadow: 0px 0px 2px white inset, 0px 0px 3px white;
+}
+
+.bg-green:hover {
+    background: rgba(83, 255, 83, 0.74);
+}
+
+.bg-yellow {
+    background: rgba(255, 255, 0, 0.65);
+    box-shadow: 0px 0px 2px white inset, 0px 0px 3px white;
+}
+
+.bg-yellow:hover {
+    background: rgba(255, 255, 77, 0.74);
+}
+
+.bg-red {
+    background: rgba(255, 93, 93, 0.65);
+    box-shadow: 0px 0px 2px white inset, 0px 0px 3px white;
+}
+
+.bg-red:hover {
+    background: rgba(255, 117, 117, 0.692);
+}
+
+.bg-blue {
+    background: rgba(107, 107, 255, 0.705);
+    box-shadow: 0px 0px 2px white inset, 0px 0px 3px white;
+}
+
+.bg-blue:hover {
+    background: rgba(121, 121, 255, 0.747);
+}
+
+.color-white {
+    color: white;
+    text-shadow: 0px 0px 2px black;
+}
+
+footer {
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.671);
+    color: rgba(255, 255, 255, 0.637);
+    box-shadow: 0px 0px 5px black;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsiveness: */
+@media only screen and (max-width:500px){
+    nav{
+        height: 45px;
+    }
+    nav h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        height: 500px;
+    }
+    .box{
+        height: 450px;
+        width: 250px;
+    }
+    .button{
+        height: 3rem;
+        width: 3rem;
+    }
+    .row input{
+        width: 13rem;
+    }
+    #all-clear{
+        width: 6.5rem;
+    }
+    footer{
+        height: 30px;
+        font-size: 10px;
+    }
+}
+
