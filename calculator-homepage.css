@@ -202,6 +202,9 @@ footer {
 
 /* Responsiveness: */
 @media only screen and (max-width:500px){
+    #myVideo{
+        filter: contrast(150%) saturate(150%) hue-rotate(100deg) blur(3px);
+    }
     nav{
         height: 45px;
     }
